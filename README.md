@@ -13,7 +13,7 @@ Elevation and distance from the urban center were important predictors of the su
 
 - [Database `.csv`](https://github.com/fblpalmeira/puma_predation/blob/main/puma_predation.csv)
 
-<img src="">
+<img src="https://github.com/fblpalmeira/puma_predation/blob/main/puma_predation.png">
 
 Reference:
 
