@@ -9,7 +9,7 @@ The probability of predation occurring in areas far from the urban center and at
 
 Elevation and distance from the urban center were important predictors of the supported model. Areas far from the urban center and at high elevations are more likely to suffer losses to pumas because of the habitat suitability for the species.
 
-- [Script `.R`]()
+- [Script `.R`](https://github.com/fblpalmeira/puma_predation/blob/main/puma_predation.R)
 
 - [Database `.csv`]()
 
