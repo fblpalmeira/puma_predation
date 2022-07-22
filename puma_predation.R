@@ -41,7 +41,7 @@ glm0<-glm(predation~1, data=pecj, family=binomial) # predacao constante/independ
 glm1<-glm(predation~live.z+area.z, data=pecj, family=binomial) # predacao dependente do numero de criacoes e do tamanho da area
 glm2<-glm(predation~ele.z+centre.z, data=pecj, family=binomial) # predacao dependente da elevacao e da distancia do centro
 glm3<-glm(predation~live.z+area.z+ele.z, data=pecj, family=binomial) # predacao dependente do numero de criacoes, do tamanho da area e da elevacao 
-glm4<-glm(predation~live.z+area.z+centre.z, data=pecj, family=binomial) # predacao dependente do numero de criacoµes, do tamanho da area e da distancia do centro urbano
+glm4<-glm(predation~live.z+area.z+centre.z, data=pecj, family=binomial) # predacao dependente do numero de criacoÂµes, do tamanho da area e da distancia do centro urbano
 glm5<-glm(predation~live.z+ele.z+centre.z, data=pecj, family=binomial) # predacao dependente do numero de criacoes, da elevacao e da distancia do centro urbano
 glm6<-glm(predation~area.z+ele.z+centre.z, data=pecj, family=binomial) # predacao dependente do tamanho da area, da elevacaa e da distancia do centro urbano
 glm7<-glm(predation~live.z+area.z+ele.z+centre.z, data=pecj, family=binomial) # predacao dependente do numero de criacoes, do tamanho da area, da elevacaoo e da distancia do centro urbano (modelo super-parametrizado ou "full model")
@@ -71,17 +71,17 @@ plogis(1.73) # max
 png(file = "glm_predation.png", width = 800, height = 700)
 
 par(mar = c(7, 10, 7, 10))
-# Plotar a probabilidade de predação do modelo ajustado
-plot(ele.z + centre.z, fitted(glm10), 
+# Plotar a probabilidade de predaÃ§Ã£o do modelo ajustado
+plot(ele.z + centre.z, fitted(glm2), 
      xlab= "Elevation and distance from the urban center", 
      ylab="Probability of predation",
      pch = 16, cex = 1.5, col="red",
      cex.lab=2.2, cex.axis=1.7) 
 legend("bottomright", legend = c("Properties"), cex = 1.5, lwd = 3, lty=0, pch=16, col="red")
-curve(predict(glm10, type = c("response"), add=T))
-fitted.values(glm10)
-residuals(glm10)
-predict(glm10)
+curve(predict(glm2, type = c("response"), add=T))
+fitted.values(glm2)
+residuals(glm2)
+predict(glm2)
 
 dev.off()
 
